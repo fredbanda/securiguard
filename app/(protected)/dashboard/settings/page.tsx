@@ -3,6 +3,7 @@ import React from 'react'
 
 const SettingsPage = async () => {
   const session = await auth();
+
   return (
     <div className="text-white text-[16px] font-bold">
       {JSON.stringify(session)}

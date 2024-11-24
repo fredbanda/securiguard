@@ -14,11 +14,11 @@ export const LoginButton = ({ children, mode = "modal", asChild = false }: Login
        router.push("/auth/login")  
     }
 
-    // if (mode === "modal") {
-    //     return (
-    //         <span>TODO: Implement modal login button</span>
-    //     )
-    // }
+    if (mode === "modal") {
+        return (
+             <span>TODO: Implement modal login button</span>
+         )
+     }
 
   return (
     <span onClick={onclick} className="cursor-pointer">{children}</span>
